@@ -28,6 +28,11 @@ z = [19,2,54,-2,7,12,98,32,10,-3,6]
 
 lower_sort = sorted(z)
 
+first_half = lower_sort[:len(lower_sort)/2]
+second_half = lower_sort[len(lower_sort)/2:]
 
+new_arr = [[]]
 
-print lower_sort
+new_arr[0].append(first_half)
+new_arr.append(second_half)
+print new_arr
